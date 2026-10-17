@@ -1,0 +1,12 @@
+{
+  "name": "omnisave-download-fix",
+  "version": "1.0.0",
+  "private": true,
+  "description": "OmniSave-style frontend with a limited direct-video download backend",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

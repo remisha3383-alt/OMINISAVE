@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#07110f">
+  <title>OmniSave — Video Link Helper</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="/" aria-label="OmniSave home">
+      <span class="brand-icon" aria-hidden="true">↓</span>
+      <span class="brand-name">OmniSave</span><span class="pro">PRO</span>
+    </a>
+    <a class="platform-menu" href="#platforms">Platforms <span>⌄</span></a>
+  </header>
+
+  <main class="hero">
+    <div class="support-badge"><span class="pulse"></span> DIRECT VIDEO FILES <span class="separator">·</span> LINK AUTO-DETECT</div>
+    <h1>Download videos from<br><span>your links</span></h1>
+    <p class="intro">Paste a direct public video-file URL to download it when the source allows access. For social platforms, open the original post and use the platform's official download option when available.</p>
+
+    <section class="platforms" id="platforms" aria-label="Supported platforms">
+      <button class="platform active" data-platform="all" type="button">↔ All Platforms</button>
+      <button class="platform" data-platform="Instagram" type="button"><span class="ig">◎</span> Instagram</button>
+      <button class="platform" data-platform="TikTok" type="button"><span class="tt">♪</span> TikTok</button>
+      <button class="platform" data-platform="YouTube" type="button"><span class="yt">▶</span> YouTube</button>
+      <button class="platform" data-platform="Facebook" type="button"><span class="fb">f</span> Facebook</button>
+      <button class="platform" data-platform="X / Twitter" type="button"><span class="xbrand">𝕏</span> X / Twitter</button>
+      <button class="platform" data-platform="Pinterest" type="button"><span class="pin">℗</span> Pinterest</button>
+    </section>
+
+    <form id="download-form" novalidate>
+      <div class="url-box">
+        <span class="url-symbol" aria-hidden="true">↔</span>
+        <label class="sr-only" for="video-url">Video URL</label>
+        <input id="video-url" type="url" placeholder="Paste a direct .mp4 link or social post URL..." autocomplete="url">
+        <button type="button" class="paste-button" id="paste-button">▣ Paste</button>
+      </div>
+      <button type="submit" class="download-button" id="download-button">↓ &nbsp; Download</button>
+    </form>
+    <div id="message" class="message" role="status" aria-live="polite" hidden></div>
+
+    <div class="samples">
+      <span class="samples-label">TRY A SAMPLE</span>
+      <button class="sample" data-sample="https://www.instagram.com/" type="button"><span class="ig">◎</span> Instagram</button>
+      <button class="sample" data-sample="https://www.tiktok.com/" type="button"><span class="tt">♪</span> TikTok</button>
+      <button class="sample" data-sample="https://www.youtube.com/" type="button"><span class="yt">▶</span> YouTube</button>
+      <button class="sample" data-sample="https://www.facebook.com/" type="button"><span class="fb">f</span> Facebook</button>
+      <button class="sample" data-sample="https://x.com/" type="button"><span class="xbrand">𝕏</span> X / Twitter</button>
+      <button class="sample" data-sample="https://www.pinterest.com/" type="button"><span class="pin">℗</span> Pinterest</button>
+    </div>
+  </main>
+  <footer>
+    <strong>OmniSave</strong>
+    <p>Only download content you own or are authorized to save. Social links open at their original source.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
